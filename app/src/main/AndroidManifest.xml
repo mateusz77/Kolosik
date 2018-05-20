@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kolosik">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity2" android:screenOrientation="portrait"/>
+        <activity android:name=".Register" android:screenOrientation="portrait"/>
+        <activity android:name=".UserActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Nauczyciel" android:screenOrientation="portrait"/>
+        <activity android:name=".DodajKolos" android:screenOrientation="portrait"/>
+        <activity android:name=".UsunKolos" android:screenOrientation="portrait"/>
+        <activity android:name=".SprawdzKolos" android:screenOrientation="portrait"/>
+        <activity android:name=".PodgladKolosa" android:screenOrientation="portrait"/>
+        <activity android:name=".EdytujKolos" android:screenOrientation="portrait"/>
+        <activity android:name=".DodajPytanie" android:screenOrientation="portrait"/>
+        <activity android:name=".TwojeKolosy" android:screenOrientation="portrait"/>
+        <activity android:name=".EdytujKolos2222" android:screenOrientation="portrait"/>
+        <activity android:name=".Wynik_Uczen" android:screenOrientation="portrait"/>
+        <activity android:name=".Wyniki" android:screenOrientation="portrait"/>
+        <activity android:name=".Pokaz_Pytanie" android:screenOrientation="portrait"/>
+        <activity android:name=".Wyniki_przejscie" android:screenOrientation="portrait"/>
+        <activity android:name=".Podglad_kolosa_przejscie" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kolosik.Register">
+
+    <EditText
+        android:id="@+id/imietxt"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Imię"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/nazwiskotxt"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nazwisko"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/imietxt"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/klasatxt"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="klasa/id grupy"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/nazwiskotxt"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/zarejestrujbtn"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="sprawdzam"
+        android:text="ZAREJESTRUJ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/idnumber"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="numer legitymacji"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/klasatxt"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nazwa Użytkownika"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/idnumber"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/statustxt"
+        android:layout_width="384dp"
+        android:layout_height="45dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="uczen/nauczyciel"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/haslotxt"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Haslo"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/zarejestrujbtn"
+        app:layout_constraintTop_toBottomOf="@+id/statustxt"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <Button
+        android:id="@+id/nauczycelbtn"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="naucz"
+        android:text="NAUCZYCIEL"
+        app:layout_constraintBottom_toTopOf="@+id/zarejestrujbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/uczenbtn"
+        app:layout_constraintTop_toBottomOf="@+id/haslotxt" />
+
+    <Button
+        android:id="@+id/uczenbtn"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="UCZEŃ"
+        app:layout_constraintBottom_toTopOf="@+id/zarejestrujbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/haslotxt" />
+</android.support.constraint.ConstraintLayout>

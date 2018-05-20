@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textView_Pytanielolololo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_odpA"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorAccent"
+            android:text="Pytanie"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textColorLink="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textView_odpA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_odpB"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:text="odpowiedzA"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/textView_odpB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_odpC"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:text="odpowiedzB" />
+
+        <TextView
+            android:id="@+id/textView_odpC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_odpD"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:text="odpowiedzC" />
+
+        <TextView
+            android:id="@+id/textView_odpD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_odppraw"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:text="odpowiedzD" />
+
+        <TextView
+            android:id="@+id/textView_odppraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/holo_blue_bright"
+            android:text="PrawidlowaODPOWIEDZ" />
+
+    </RelativeLayout>
+
+</LinearLayout>
